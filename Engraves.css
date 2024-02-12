@@ -1,0 +1,60 @@
+/* Reset CSS */
+
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../WireHarness.png');
+}
+
+/*button*/
+
+.button {
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-top: 200px;
+    margin-left: 0px;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+  }
+
+  /* Optional: Add more styles to make it even more attractive */
+  .button:active {
+    transform: translateY(1px);
+  }
+
+/* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../WireHarness.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+        }
+
+        .logo {
+            position: relative;
+            width: 500px; /* Adjust the width as needed */
+            margin-top: -200px;
+            margin-left: 0px;
+        }

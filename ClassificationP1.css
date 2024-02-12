@@ -1,0 +1,264 @@
+/* CSS code in ClassificationP1.css */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.Rec-img .Rec {
+    position: absolute; /* Change to relative positioning */
+    width: 100%;
+    height: 100%;
+    background: #eaeaea; /* Background color */
+    border: 25px solid #1734e3; /* Border styling */
+    
+
+}
+
+
+
+.Rec-img {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Align to the vertical center */
+    transform: translateY(-50%); /* Correct vertical alignment */
+    width: 450px;
+    height: 450px;
+    right: 20px; /* Distance from the right edge of the screen */
+    z-index: 3;
+
+}
+
+.Rec-img .Rec img {
+    position: absolute;
+    top: 100px;
+    width: 180%; /* Make the image width 180% of its container */
+    height: auto; /* Maintain aspect ratio */
+    right: -30px;
+    z-index: 2;
+}
+
+.Rec2{
+    position: absolute; 
+    width: 700px;
+    height: 700px;
+    background: #1734e3; 
+    transform: rotate(45deg);
+    right: -30%;
+    top:-50%;
+    z-index: 1;
+}
+/*first wire*/
+.WireInsul1 {
+    position: absolute; 
+    width: 200px;
+    height: 35px;
+    background-color: red; 
+    right: 50%;
+    top:30%;
+}
+.WireStran1 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 63.1%;
+    top:33%;
+    border: 1px solid #000000;
+}
+.WireStran2 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 63.1%;
+    top:32%;
+    border: 1px solid #000000;
+}
+
+.WireStran3 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 63.1%;
+    top:31%;
+    border: 1px solid #000000;
+}
+
+/*Second wire*/
+.WireInsul2 {
+    position: absolute; 
+    width: 200px;
+    height: 35px;
+    background-color: brown; 
+    right: 50%;
+    top:50%;
+}
+.WireStran12 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 63.1%;
+    top:51.09%;
+    border: 1px solid #000000;
+}
+.WireStran22 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 63.1%;
+    top:52%;
+    border: 1px solid #000000;
+}
+
+.WireStran32 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 63.1%;
+    top:53%;
+    border: 1px solid #000000;
+}
+
+
+/*third wire*/
+.WireInsul3 {
+    position: absolute; 
+    width: 200px;
+    height: 35px;
+    background-color: blue; 
+    right: 75%;
+    top:30%;
+}
+.WireStran13 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 73%;
+    top:33%;
+    border: 1px solid #000000;
+}
+.WireStran23 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 73%;
+    top:32%;
+    border: 1px solid #000000;
+}
+
+.WireStran33 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 73%;
+    top:31%;
+    border: 1px solid #000000;
+}
+
+
+/*fourth wire*/
+.WireInsul4 {
+    position: absolute; 
+    width: 200px;
+    height: 35px;
+    background-color: green; 
+    right: 75%;
+    top:50%;
+}
+.WireStran14 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 73%;
+    top:51.09%;
+    border: 1px solid #000000;
+}
+.WireStran24 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 73%;
+    top:52%;
+    border: 1px solid #000000;
+}
+
+.WireStran34 {
+    position: absolute; 
+    width: 30px;
+    height: 7px;
+    background: #EE7F2F; 
+    right: 73%;
+    top:53%;
+    border: 1px solid #000000;
+}
+/*input container*/
+.input-container {
+    position: absolute; 
+    margin-left: 300px;
+    margin-top: 500px;
+    width: 600px;
+}
+
+.input-container input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.article1 {
+    font-size: 70px; 
+    color: #333; 
+    font-weight: bold;
+    margin-top: 550px; 
+    margin-left: 1200px; 
+  }
+  .article2 {
+    position: absolute;
+    font-size: 20px; 
+    color: #333; 
+    margin-top: -550px; 
+    margin-left: 200px;
+    align-items:center;
+    font-weight: bold;
+  }
+
+  .rectangle {
+    width: 200px;
+    height: 35px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+  }
+  #rectangle1 {
+    top: 30%;
+    right: 50%;
+  }
+  #rectangle2 {
+    top: 50%;
+    right: 50%;
+  }
+  #rectangle3 {
+    top: 30%;
+    right: 75%;
+  }
+  #rectangle4 {
+    top: 50%;
+    right: 75%;
+  }

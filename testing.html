@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="testing.css">
+<title>Rectangle Color Changer</title>
+</head>
+<body>
+  <input type="text" id="numberInput" >
+  <div class="rectangle red" id="rect1"></div>
+  <div class="rectangle red" id="rect2"></div>
+  <div class="rectangle green" id="rect3"></div>
+  <div class="rectangle green" id="rect4"></div>
+
+  <script>
+    document.getElementById("numberInput").addEventListener("input", function() {
+      var number = parseInt(this.value);
+      if (number === 1) {
+        document.getElementById("rect1").classList.remove("red");
+        document.getElementById("rect2").classList.remove("red");
+        document.getElementById("rect1").classList.add("blue");
+        document.getElementById("rect2").classList.add("blue");
+        document.getElementById("rect3").classList.remove("green");
+        document.getElementById("rect4").classList.remove("green");
+        document.getElementById("rect3").classList.add("yellow");
+        document.getElementById("rect4").classList.add("yellow");
+      } else if (number === 2) {
+        document.getElementById("rect1").classList.remove("blue");
+        document.getElementById("rect2").classList.remove("blue");
+        document.getElementById("rect1").classList.add("red");
+        document.getElementById("rect2").classList.add("red");
+        document.getElementById("rect3").classList.remove("yellow");
+        document.getElementById("rect4").classList.remove("yellow");
+        document.getElementById("rect3").classList.add("green");
+        document.getElementById("rect4").classList.add("green");
+      }
+    });
+  </script>
+  
+</body>
+</html>

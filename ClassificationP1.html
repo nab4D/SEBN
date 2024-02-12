@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ClassificationP1.css">
+    <title>SEBN wire classifier </title>
+    <style>
+        /* Style for the logo */
+        .logo {
+            width: 150px; /* Adjust the width as needed */
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Logo image -->
+    <img src="SEBN-Logo.png" alt="Logo" class="logo">
+
+    <!-- Container for the rectangular image -->
+    <div class="Rec-img">
+        <div class="Rec">
+            <img src="ID4.png" alt="ID4 Image">
+                
+        </div>
+    </div>
+
+    <div class="Rec2"></div>
+
+    <div class="WireInsul1" id="WI1"></div>
+
+    <div class="WireStran1"></div>
+    <div class="WireStran2"></div>
+    <div class="WireStran3"></div>
+    <div class="WireStran4"></div>
+
+
+    <div class="WireInsul2" id="WI2"></div>
+
+    <div class="WireStran12"></div>
+    <div class="WireStran22"></div>
+    <div class="WireStran32"></div>
+    <div class="WireStran42"></div>
+
+    <div class="WireInsul3" id="WI3"></div>
+
+    <div class="WireStran13"></div>
+    <div class="WireStran23"></div>
+    <div class="WireStran33"></div>
+    <div class="WireStran43"></div>
+
+    <div class="WireInsul4" id="WI4"></div>
+
+    <div class="WireStran14"></div>
+    <div class="WireStran24"></div>
+    <div class="WireStran34"></div>
+    <div class="WireStran44"></div>
+
+    <div class="input-container" id="In1">
+        <input type="password" id="option" placeholder="Scan barcode here..." min="1" max="3" onchange="changeColors(this.value)">
+    </div>
+
+    <div class="article1">ID4</div>
+    <div class="article2">Please follow the colors of the scanned article below: </div>
+
+
+    <!-- the logic behind the colors changing                     -->
+
+    <div class="rectangle" id="rectangle1">Twisted Wire (1) </div>
+    <div class="rectangle" id="rectangle2">Twisted Wire (2)</div>
+    <div class="rectangle" id="rectangle3">Sensor wire (1)</div>
+    <div class="rectangle" id="rectangle4">Sensor wire (2)</div>
+
+    <script>
+      function changeColors(option) {
+        var rectangle1 = document.getElementById("rectangle1");
+        var rectangle2 = document.getElementById("rectangle2");
+        var rectangle3 = document.getElementById("rectangle3");
+        var rectangle4 = document.getElementById("rectangle4");
+  
+        switch(option) {
+          case "1":
+            rectangle1.style.backgroundColor = "blue";
+            rectangle2.style.backgroundColor = "yellow";
+            rectangle3.style.backgroundColor = "green";
+            rectangle4.style.backgroundColor = "red";
+            break;
+          case "2":
+            rectangle1.style.backgroundColor = "orange";
+            rectangle2.style.backgroundColor = "purple";
+            rectangle3.style.backgroundColor = "cyan";
+            rectangle4.style.backgroundColor = "magenta";
+            break;
+          case "3":
+            rectangle1.style.backgroundColor = "lime";
+            rectangle2.style.backgroundColor = "violet";
+            rectangle3.style.backgroundColor = "teal";
+            rectangle4.style.backgroundColor = "pink";
+            break;
+          default:
+            console.log("Invalid input");
+        }
+      }
+    </script>
+
+
+</body>
+</html>
